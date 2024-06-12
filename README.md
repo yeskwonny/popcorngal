@@ -32,7 +32,7 @@ Data management
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
-## Livedemo
+## Live demo
 ![image](image.png)
 
 ## Setup
@@ -53,8 +53,7 @@ Data management
 - Error message displays
 - Responsive design for mobile.
 - When users click the watched list, shows the movie details.
-- Design improvement
-- Summary component
+
 
 ## Contact
 
