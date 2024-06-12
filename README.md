@@ -53,8 +53,9 @@ Data management
   
 ## Room for Improvement
 
--Error message displays 
+-Error message displays
 -Responsive design for mobile.
+-When users click the watched list, shows the movie details. 
 
 
 ## Contact
