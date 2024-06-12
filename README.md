@@ -55,7 +55,9 @@ Data management
 
 - Error message displays
 - Responsive design for mobile.
-- When users click the watched list, shows the movie details. 
+- When users click the watched list, shows the movie details.
+- Design improvement
+- Summary component 
 
 
 ## Contact
