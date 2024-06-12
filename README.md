@@ -33,13 +33,12 @@ Data management
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Livedemo
-
-![image](https://github.com/yeskwonny/popcorngal/assets/138835629/80076a78-67d8-4468-8888-bf808e1b4636)
+![image](image.png)
 
 ## Setup
 
 - Clone the repository to your local machine.
-  https://github.com/yeskwonny/weather-app.git
+  https://github.com/yeskwonny/popcorngal.git
 - Install dependencies using npm install.
   ```bash
   npm install
