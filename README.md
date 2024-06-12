@@ -35,8 +35,8 @@ Data management
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
-## Livedemo
-![image](https://github.com/yeskwonny/popcorngal/assets/138835629/80076a78-67d8-4468-8888-bf808e1b4636)
+## Live demo
+<img width="1466" alt="image" src="https://github.com/yeskwonny/popcorngal/assets/138835629/8fb98309-7a62-4ab7-820e-03f074ebd5f3">
 
 ## Setup
 
