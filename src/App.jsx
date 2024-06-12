@@ -85,7 +85,7 @@ function App() {
   );
   return (
     <div className=" bg-[#ffffff]">
-      <Nav className="flex mt-5">
+      <Nav>
         <Logo />
         <Search query={query} setQuery={setQuery} />
       </Nav>
@@ -140,7 +140,9 @@ function Main({ children }) {
 }
 
 function Nav({ children }) {
-  return <header className="flex px-3 py-4">{children}</header>;
+  return (
+    <header className="flex px-3 py-4 justify-center gap-1 ">{children}</header>
+  );
 }
 
 function Summary({ watchedList }) {
@@ -161,7 +163,7 @@ function Summary({ watchedList }) {
 
         <p className="flex items-center gap-1">
           <BsBookmarkStar />
-          <span>{averageRating}</span>
+          <span>{averageRating ? averageRating : 0}</span>
         </p>
       </div>
     </div>
