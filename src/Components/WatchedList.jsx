@@ -7,7 +7,7 @@ function WatchedList({ watchedList, handleDeleteButton }) {
   return (
     <ul>
       {watchedList.map((movie) => (
-        <li key={movie.imdbID} className="flex items-start mb-4">
+        <li key={movie.imdbID} className="flex items-start mb-4 px-2">
           <img
             src={movie.poster}
             alt={movie.title}

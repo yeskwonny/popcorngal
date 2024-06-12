@@ -2,9 +2,9 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 
 function MovieList({ movies, setSelectedMovieId, watchedList }) {
   return (
-    <ul className="w-full ">
+    <ul className="">
       {movies.length === 0 ? (
-        <li className="px-2 py-3 text-center">Search your movies!</li>
+        <li className="text-center">Search your movies!</li>
       ) : (
         movies.map((movie) => (
           <Movie
@@ -25,7 +25,7 @@ function Movie({ movie, setSelectedMovieId, watchedList }) {
 
   return (
     <li
-      className="flex gap-3 border-b-[2px] border-b-[#222831] px-2 py-3 hover:bg-[#c0a0b9] hover:duration-150 cursor-pointer"
+      className="flex gap-3 border-b-[2px] border-b-[#222831]  py-3 hover:bg-[#c0a0b9] hover:duration-150 cursor-pointer"
       onClick={() => setSelectedMovieId(movie.imdbID)}
     >
       <img className="w-16" src={movie.Poster} alt={`${movie.Title} poster`} />

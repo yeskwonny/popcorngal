@@ -5,8 +5,7 @@ import Loader from "./Components/Loader";
 import MovieList from "./Components/MovieList";
 import MovieDetail from "./Components/MovieDetail";
 import WatchedList from "./Components/WatchedList";
-import { AiOutlineNumber } from "react-icons/ai";
-import { BsBookmarkStar } from "react-icons/bs";
+import Summary from "./Components/Summary";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -129,7 +128,7 @@ function App() {
 // make this box resuable using children prop (component compostion)
 function Box({ children }) {
   return (
-    <div className=" w-[450px] h-screen text-[#222831] bg-[#f2f2f2] mt-10  border-[2px] border-[#222831] rounded-xl relative overflow-y-scroll scrollbar flex flex-col px-3 py-3 mb-3">
+    <div className=" w-[450px] h-screen text-[#222831] bg-[#f2f2f2] mt-10  border-[2px] border-[#222831] rounded-xl relative overflow-y-scroll scrollbar flex flex-col   px-3 py-3 mb-3">
       {children}
     </div>
   );
@@ -142,31 +141,6 @@ function Main({ children }) {
 function Nav({ children }) {
   return (
     <header className="flex px-3 py-4 justify-center gap-1 ">{children}</header>
-  );
-}
-
-function Summary({ watchedList }) {
-  const numberOfWatched = watchedList.length;
-  const sumRating = watchedList
-    .map((movie) => movie.userRating)
-    .reduce((pre, cur) => pre + cur, 0);
-  const averageRating = Math.floor(sumRating / numberOfWatched);
-
-  return (
-    <div className="bg-[#222831] text-[#f2f2f2] font-bold text-[18px] rounded-md py-1 mb-3">
-      <h1 className="text-center">Movies you watched</h1>
-      <div className="flex justify-center gap-3 mt-3 mb-5">
-        <p className="flex items-center gap-1">
-          <AiOutlineNumber />
-          <span>{watchedList ? numberOfWatched : 0}</span>
-        </p>
-
-        <p className="flex items-center gap-1">
-          <BsBookmarkStar />
-          <span>{averageRating ? averageRating : 0}</span>
-        </p>
-      </div>
-    </div>
   );
 }
 

@@ -81,9 +81,9 @@ function MovieDetail({
 
     fetchData();
   }, [selectedMovieId]);
-  useEffect(function () {}, []);
+
   return (
-    <div className="relative h-full">
+    <div className="relative h-full mx-auto">
       {isLoading ? (
         <Loader />
       ) : (
